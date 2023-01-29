@@ -6,42 +6,51 @@
             <div class="dos-columnas">
                 <div class="form-group">
                     <label for="nombre-form" class="nombre-form">Nombre</label>
-                    <input type="text" class="nombre-input-form" id="nombre-form">
+                    <input type="text" name="nombre" class="nombre-input-form" id="nombre-form">
                 </div>
                 <div class="form-group">
                     <label for="apellido-form" class="apellido-form">Apellido</label>
-                    <input type="text" class="apellido-input-form" id="apellido-form">
+                    <input type="text" name="apellido" class="apellido-input-form" id="apellido-form">
                 </div>
                 <div class="form-group">
                     <label for="direccion-form" class="direccion-form">Direccion</label>
-                    <input type="text" class="direccion-input-form" id="direccion-form">
+                    <input type="text" name="direccion" class="direccion-input-form" id="direccion-form">
                 </div>
                 <div class="form-group">
                     <label for="correo-form" class="correo-form">Correo Electrónico</label>
-                    <input type="text" class="correo-input-form" id="correo-form">
+                    <input type="email" name="correo" class="correo-input-form" id="correo-form">
                 </div>
                 <div class="form-group">
                     <label for="tel-form" class="tel-form">Teléfono</label>
-                    <input type="text" class="tel-input-form" id="tel-form">
+                    <input type="number" name="telefono" class="tel-input-form" id="tel-form">
                 </div>
                 <div class="form-group">
                     <label for="ciudad-form" class="ciudad-form">Ciudad</label>
-                    <input type="text" class="ciudad-input-form" id="ciudad-form">
+                    <input type="text" name="ciudad" class="ciudad-input-form" id="ciudad-form">
                 </div>
                 <div class="form-group">
                     <label for="pais-form" class="pais-form">País</label>
-                    <input type="text" class="pais-input-form" id="pais-form">
+                    <input type="text" name="pais" class="pais-input-form" id="pais-form">
                 </div>
                 <div class="form-group">
                     <label for="postal-form" class="postal-form">Código Postal</label>
-                    <input type="text" class="postal-input-form" id="postal-form">
+                    <input type="text" name="postal" class="postal-input-form" id="postal-form">
                 </div>
                 <div class="form-group">
                     <label for="satisfaccion-form" class="satisfaccion-form">Grado de Satisfacción</label>
-                    <input type="text" class="postal-input-form" id="postal-form">
+                    {{!-- <input type="text" class="satisfaccion-input-form" id="satisfaccion-form"> --}}
+                    <select name="satisfaccion" id="satisfaccion">
+                        <option value="mucho">Mucho</option>
+                        <option value="poco" selected>Poco</option>
+                        <option value="nada">Nada</option>
+                    </select>
                 </div><div class="form-group">
                     <label for="vorveras-form" class="volveras-form">¿Volverás?</label>
-                    <input type="text" class="volveras-input-form" id="volveras-form">
+                    {{!-- <input type="text" class="volveras-input-form" id="volveras-form"> --}}
+                    <select name="volveras" id="volveras">
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
                 </div>
             </div>
         </div>

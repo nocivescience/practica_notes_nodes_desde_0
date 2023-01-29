@@ -26,6 +26,11 @@
   border: none;
   border-radius: 5px;
 }
+@media screen and (max-width: 376px) {
+  .container-formulario .formulario button {
+    height: 40px;
+  }
+}
 .container-formulario .formulario h1 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -34,6 +39,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media screen and (max-width: 900px) {
+  .container-formulario .formulario .inner-form .dos-columnas {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .container-formulario .formulario .inner-form .dos-columnas .form-group {
   display: flex;
   flex-direction: column;
@@ -41,12 +52,20 @@
   margin-left: 20px;
   margin-right: 20px;
 }
-.container-formulario .formulario .inner-form .dos-columnas .form-group input {
+.container-formulario .formulario .inner-form .dos-columnas .form-group input, .container-formulario .formulario .inner-form .dos-columnas .form-group select {
   padding: 10px;
   border: none;
   border-radius: 5px;
   background-color: #757575;
 }
-.container-formulario .formulario .inner-form .dos-columnas .form-group input:hover {
+@media screen and (max-width: 376px) {
+  .container-formulario .formulario .inner-form .dos-columnas .form-group input, .container-formulario .formulario .inner-form .dos-columnas .form-group select {
+    width: 130px;
+  }
+}
+.container-formulario .formulario .inner-form .dos-columnas .form-group label {
+  font-size: 13px;
+}
+.container-formulario .formulario .inner-form .dos-columnas .form-group label:hover {
   background-color: #575757;
 }/*# sourceMappingURL=form.css.map */

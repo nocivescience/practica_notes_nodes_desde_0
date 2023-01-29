@@ -24,6 +24,8 @@ $titulo: 'Montserrat', sans-serif
             height: 50px
             border: none
             border-radius: 5px
+            @media screen and ( max-width: 376px )
+                height: 40px
         h1
             font-family: $titulo
             text-align: center
@@ -31,16 +33,23 @@ $titulo: 'Montserrat', sans-serif
             .dos-columnas
                 display: grid
                 grid-template-columns: 1fr 1fr
+                @media screen and ( max-width: 900px )
+                    display: flex
+                    flex-direction: column
                 .form-group
                     display: flex
                     flex-direction: column
                     margin-bottom: 10px
                     margin-left: 20px
                     margin-right: 20px
-                    input
+                    input, select
                         padding: 10px
                         border: none
                         border-radius: 5px
                         background-color: #757575
+                        @media screen and ( max-width: 376px )
+                            width: 130px
+                    label
+                        font-size: 13px
                         &:hover
                             background-color: #575757
