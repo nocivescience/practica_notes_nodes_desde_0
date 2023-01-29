@@ -20,7 +20,7 @@ app.set('view engine', '.hbs')
 app.use(morgan('dev'))
 app.use(express.urlencoded({extended:true}))
 app.use(require('./routes/index.routes'))
-app.use(require('./routes/notes.routes'))
+app.use(require('./routes/contacts.routes'))
 app.use(express.static(path.join(app.get('views'),'static')))
 //listeners
 app.listen(app.get('port'),()=>{

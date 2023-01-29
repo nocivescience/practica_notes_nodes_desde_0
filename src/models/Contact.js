@@ -1,5 +1,5 @@
-const mongoose= require('mongoose')
-const ContactSchema= new mongoose.Schema(
+const {Schema,model}= require('mongoose')
+const ContactSchema= new Schema(
     {
         nombre: {type: String, required: true},
         apellido: {type: String, required: true},
@@ -13,4 +13,4 @@ const ContactSchema= new mongoose.Schema(
         volveras: {type: String, required: true},
     }
 )
-export default mongoose.model('Contact', ContactSchema)
+module.exports= model('Contact', ContactSchema)
