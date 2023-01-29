@@ -1,6 +1,7 @@
 const express=require('express')
 const path=require('path')
 const morgan= require('morgan')
+require('./database')
 const {engine}= require('express-handlebars')
 const app=express()
 //settings
