@@ -3,4 +3,7 @@ const router=Router()
 router.get('/', (req,res)=>{
     res.render('index')
 })
+router.get('/form',(req,res)=>{
+    res.render('form')
+})
 module.exports=router
