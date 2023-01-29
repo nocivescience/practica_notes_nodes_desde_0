@@ -1,6 +1,6 @@
 const Contact= require('../models/Contact')
 const contactControllers={
-    createNewContact:  (req,res)=>{
+    renderForm:  (req,res)=>{
         res.render('form')
     }
 }
